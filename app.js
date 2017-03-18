@@ -23,14 +23,12 @@ app.get("/", function(req, res) {
 
 app.post("/search", function(req, res) {
     // get start/end locations
-    var startLatitude = (req.body.startLatitude);
-    var startLongitude = (req.body.startLongitude);
-    var endLatitude = (req.body.endLatitude);
-    var endLongitude = (req.body.endLongitude);
+    var url = (req.body.url);
 
-    mc.parse('https://trackchanges.postlight.com/building-awesome-cms-f034344d8ed')
+    mc.parse(url)
         .then((data) => {
-            console.log('data', data);
+            res.send(data);
+            res.end();
         })
         .catch((e) => {
             console.log('error', e);

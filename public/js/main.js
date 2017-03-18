@@ -2,6 +2,10 @@ $(document).ready(function() {
 
     function showResults(data, code, jqXHR) {
         console.log(data);
+        $('#title').css('display', 'none');
+        $('#subtitle').css('display', 'none');
+
+        $('#content').append(data.content);
 
     }
 
