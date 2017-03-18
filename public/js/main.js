@@ -2,11 +2,24 @@ $(document).ready(function() {
 
     function showResults(data, code, jqXHR) {
         console.log(data);
-        $('#title').css('display', 'none');
-        $('#subtitle').css('display', 'none');
+        var title = $('#title');
+        title.text(data.title);
+        title.css({
+            'font-family': 'Merriweather',
+            'font-style': 'italic;'
+        });
 
-        $('#content').append(data.content);
+        var subtitle = $('#subtitle');
+        subtitle.text(data.author);
+        subtitle.css('font-family', 'Merriweather');
 
+
+        $('#content').html(data.content);
+        var images = document.getElementsByTagName('img');
+        var l = images.length;
+        for (var i = 0; i < l; i++) {
+            images[0].parentNode.removeChild(images[0]);
+        }
     }
 
 
