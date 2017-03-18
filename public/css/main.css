@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i');
-@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
   height: 100%;
@@ -26,7 +26,19 @@ body {
 #title {
   font-size: 40px;
   font-style: italic;
+  margin-bottom: 10px;
 }
+
+#subtitle {
+  margin-bottom: 40px;
+}
+
+#content{
+  max-width: 50%;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
 
 .btn-default {
   background-color: #D233F9;
@@ -54,12 +66,10 @@ body {
   margin-top: 0px;
 }
 
-
-#content{
-  max-width: 50%;
-  font-size: 28px;
-  font-family: 'Arimo';
+.container{
+  max-width: 100%;
 }
+
 
 
 .searchBar {
