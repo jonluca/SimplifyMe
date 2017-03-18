@@ -39,10 +39,13 @@ body {
   font-family: 'Roboto';
 }
 
+#urllabel{
+  margin-right: 5px;
+}
 
 .btn-default {
-  background-color: #D233F9;
-  color: white;
+  background-color: rgb(248,248,248);
+  color: black;
   transition: all .5s ease;
   font-size: 14px;
 }
