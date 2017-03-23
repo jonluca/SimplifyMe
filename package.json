@@ -1,24 +1,25 @@
 {
-  "name": "pickaplace",
+  "name": "SimplifyMe",
   "version": "1.0.0",
-  "description": "narrows down search results for yelp",
+  "description": "Clean up your articles!",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonluca/PickAPlace.git"
+    "url": "git+https://github.com/jonluca/SimplifyMe.git"
   },
   "author": "JonLuca and Quinn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonluca/PickAPlace/issues"
+    "url": "https://github.com/jonluca/SimplifyMe/issues"
   },
-  "homepage": "https://github.com/jonluca/PickAPlace#readme",
+  "homepage": "https://github.com/jonluca/SimplifyMe#readme",
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "path": "^0.12.7",
+    "mercury-client": "^1.0.1",
   }
 }
