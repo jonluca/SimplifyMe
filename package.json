@@ -21,6 +21,6 @@
     "express": "^4.15.2",
     "path": "^0.12.7",
     "mercury-client": "^1.0.1",
-    "body-parser": "*",
+    "body-parser": "*"
   }
 }
