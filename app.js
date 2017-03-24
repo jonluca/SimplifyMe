@@ -17,11 +17,11 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get("/", function(req, res) {
+app.get("/SimplifyMe/", function(req, res) {
     res.render("landing.ejs");
 });
 
-app.post("/search", function(req, res) {
+app.post("/SimplifyMe/search", function(req, res) {
     // get start/end locations
     var url = (req.body.url);
 
