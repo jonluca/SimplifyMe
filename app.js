@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 
 app.set("view engine", "ejs");
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/SimplifyMe/' + express.static(path.join(__dirname, 'public')));
 
 
 app.get("/SimplifyMe/", function(req, res) {
