@@ -7,6 +7,7 @@ var path = require('path');
 var app = express();
 const MercuryClient = require('mercury-client');
 const mc = new MercuryClient('5iDxDSbtmURmaGFNBRdK20HXUCMThEHK703HPii8');
+app.enable('trust proxy');
 
 app.use(bodyParser.urlencoded({
     extended: true
