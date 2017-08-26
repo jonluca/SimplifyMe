@@ -15,14 +15,14 @@ app.use(bodyParser.urlencoded({
 
 app.set("view engine", "ejs");
 
-app.use('/SimplifyMe/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 
-app.get("/SimplifyMe/", function(req, res) {
+app.get("/", function(req, res) {
     res.render("landing.ejs");
 });
 
-app.post("/SimplifyMe/search", function(req, res) {
+app.post("/search", function(req, res) {
     // get start/end locations
     var url = (req.body.url);
 
