@@ -7,6 +7,9 @@ var path = require('path');
 var app = express();
 const MercuryClient = require('mercury-client');
 const mc = new MercuryClient('5iDxDSbtmURmaGFNBRdK20HXUCMThEHK703HPii8');
+var helmet = require('helmet');
+app.use(helmet());
+
 app.enable('trust proxy');
 
 app.use(bodyParser.urlencoded({
@@ -18,11 +21,11 @@ app.set("view engine", "ejs");
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.render("landing.ejs");
 });
 
-app.post("/search", function(req, res) {
+app.post("/search", function (req, res) {
     // get start/end locations
     var url = (req.body.url);
 
@@ -38,6 +41,6 @@ app.post("/search", function(req, res) {
 });
 
 
-app.listen(8080, 'localhost', function() {
+app.listen(8080, 'localhost', function () {
     console.log("Listening on port 8080");
 });
