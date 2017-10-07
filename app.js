@@ -3,10 +3,10 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var path = require('path');
-
+const config = require('./config');
 var app = express();
 const MercuryClient = require('mercury-client');
-const mc = new MercuryClient('5iDxDSbtmURmaGFNBRdK20HXUCMThEHK703HPii8');
+const mc = new MercuryClient(config.key);
 var helmet = require('helmet');
 app.use(helmet());
 
