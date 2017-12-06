@@ -21,11 +21,11 @@ app.set("view engine", "ejs");
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
     res.render("landing.ejs");
 });
 
-app.post("/search", function (req, res) {
+app.post("/search", function(req, res) {
     // get start/end locations
     var url = (req.body.url);
 
@@ -41,6 +41,6 @@ app.post("/search", function (req, res) {
 });
 
 
-app.listen(8080, 'localhost', function () {
+app.listen(8080, 'localhost', function() {
     console.log("Listening on port 8080");
 });
