@@ -42,7 +42,7 @@ $(document).ready(function() {
         } else {
             $.ajax({
                 method: 'POST',
-                url: "/SimplifyMe/search",
+                url: "search",
                 type: 'json',
                 data: {
                     url: url.value
