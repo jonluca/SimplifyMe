@@ -3,85 +3,81 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #FFFFFF;
-  position: relative;
-  min-height: 100%;
-  flex: 1;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+    position: relative;
+    min-height: 100%;
+    flex: 1;
     flex-direction: column;
 
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 20px;   /* Height of the footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Height of the footer */
 }
 
 #title {
-  font-size: 40px;
-  font-style: italic;
-  margin-bottom: 10px;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 #subtitle {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-#content{
-  max-width: 50%;
-  font-size: 20px;
-  font-family: 'Roboto';
+#content {
+    max-width: 50%;
+    font-size: 20px;
+    font-family: 'Roboto';
 }
 
-#urllabel{
-  margin-right: 5px;
+#urllabel {
+    margin-right: 5px;
 }
 
 .btn-default {
-  background-color: rgb(248,248,248);
-  color: black;
-  transition: all .5s ease;
-  font-size: 14px;
+    background-color: rgb(248, 248, 248);
+    color: black;
+    transition: all .5s ease;
+    font-size: 14px;
 }
 
 .btn-default:disabled {
-  color: #ccc;
+    color: #ccc;
 }
 
 .btn-default:hover {
-  color: black;
-  background-color: #fff;
+    color: black;
+    background-color: #fff;
 }
 
 .fullNav {
-  width: 100%;
+    width: 100%;
 }
-
 
 .choose {
-  display: none;
-  margin-top: 0px;
+    display: none;
+    margin-top: 0px;
 }
 
-.container{
-  max-width: 100%;
+.container {
+    max-width: 100%;
 }
-
-
 
 .searchBar {
-  width: 80% !important;
-  margin-right: 10px;
+    width: 80% !important;
+    margin-right: 10px;
 }
 
-
 .info {
-  height: 100px;
-  line-height: 30px;
+    height: 100px;
+    line-height: 30px;
 }

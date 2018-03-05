@@ -13,34 +13,32 @@ app.use(helmet());
 app.enable('trust proxy');
 
 app.use(bodyParser.urlencoded({
-    extended: true
+  extended: true
 }));
 
 app.set("view engine", "ejs");
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-
-app.get("/", function(req, res) {
-    res.render("landing.ejs");
+app.get("/", function (req, res) {
+  res.render("landing.ejs");
 });
 
-app.post("/search", function(req, res) {
-    // get start/end locations
-    var url = (req.body.url);
+app.post("/search", function (req, res) {
+  // get start/end locations
+  var url = (req.body.url);
 
-    mc.parse(url)
-        .then((data) => {
-            res.send(data);
-            res.end();
-        })
-        .catch((e) => {
-            console.log('error', e);
-        });
+  mc.parse(url)
+    .then((data) => {
+      res.send(data);
+      res.end();
+    })
+    .catch((e) => {
+      console.log('error', e);
+    });
 
 });
 
-
-app.listen(8080, 'localhost', function() {
-    console.log("Listening on port 8080");
+app.listen(8080, 'localhost', function () {
+  console.log("Listening on port 8080");
 });
