@@ -32,7 +32,6 @@ $(document).ready(function () {
   }
 
   $('#simplify').click(function () {
-    console.log('search clicked');
     var url = document.getElementById('url');
     if (url.value == "") {
       alert("URL must be set!");
