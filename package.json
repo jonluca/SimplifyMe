@@ -18,7 +18,7 @@
   "homepage": "https://github.com/jonluca/SimplifyMe#readme",
   "dependencies": {
     "body-parser": "*",
-    "ejs": "^2.6.1",
+    "ejs": "^3.0.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
     "mercury-client": "^2.0.0",
