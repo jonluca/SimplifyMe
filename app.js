@@ -8,7 +8,7 @@ var app = express();
 const MercuryClient = require('mercury-client');
 const mc = new MercuryClient(config.key);
 var helmet = require('helmet');
-app.use(helmet({xssFilter: false}));
+app.use(helmet({xssFilter: false, contentSecurityPolicy: false}));
 
 app.enable('trust proxy');
 
